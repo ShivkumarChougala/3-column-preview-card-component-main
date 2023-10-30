@@ -1,0 +1,31 @@
+@use 'variables' as * ;
+@use 'sass:math';
+
+$Lexend-Deca:'Lexend Deca';
+$Big-Shoulders-Display:'Big Shoulders Display';
+
+@font-face {
+    font-family:'Lexend Deca', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Big Shoulders Display';
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    font-family:$Lexend-Deca;
+}
+h2{
+    font-family: $Big-Shoulders-Display;
+}
+@include breakpoint-up('medium'){
+    html{
+        font-size: 17px;
+    }
+
+}

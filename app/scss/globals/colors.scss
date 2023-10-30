@@ -1,0 +1,36 @@
+@use 'variables' as *;
+
+
+// Primary
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+
+// Neutral
+$Transparent-white: hsla(0, 0%, 100%, 0.75);
+$Very-light-gray: hsl(0, 0%, 95%);
+
+article:nth-child(1){
+    background-color: $Bright-orange;
+}
+article:nth-child(2){
+    background-color: $Dark-cyan;
+}
+article:nth-child(3){
+    background-color: $Very-dark-cyan;
+}
+p{
+    color:$Transparent-white;
+}
+h2{
+    color: $Very-light-gray;
+}
+main article:nth-child(1) button{
+    color: $Bright-orange;
+}
+main article:nth-child(2) button{
+    color: $Dark-cyan;
+}
+main article:nth-child(3) button{
+    color: $Very-dark-cyan;
+}
